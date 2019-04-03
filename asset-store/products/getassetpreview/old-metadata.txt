@@ -1,0 +1,6 @@
+Title: GetAssetPreview in UnityEngine
+Desc:
+
+This asset provides a quickly way to get any object preview like AssetPreview.GetAssetPreview() Unity Editor method actually does.
+
+Easily configurable, quickly and optimized for all platforms!
