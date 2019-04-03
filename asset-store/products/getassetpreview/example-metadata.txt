@@ -1,0 +1,43 @@
+<strong>"ZombieAIPack Template" will provide you a customizable template for making a zombie game.</strong>
+
+<strong>ZombieAIPack</strong> is optimized for Windows PC and Web Player.
+
+<strong>Clean, simple and easy to understand</strong>, this asset contains a PDF manual about how to configure the variables of the zombie and the player.
+
+<strong>Main contents:</strong>
+
+- 2 Zombies prefabs with their customizable models and their respective rigs, animations and scripts.
+- 1 Player prefab, also with a rig, animations and script.
+
+<strong>Main features:</strong>
+
+- The zombie has the ability to wander around with a prepared wandering system, is also programmed and animated to eat the player's dead body.
+- Comes with multiple variables to configure the zombie as you wish.
+- Programmed to move as a TPS(Third Person Shooter), comes with multiple variables to configure it, and a weapon system to add more guns to it.
+
+<strong>Extras:</strong>
+
+- 2 3D scenery models as a plus, which are a tiny office, and a circular bunker.
+- 2 3D guns, which are a pistol and a sub machinegun.
+- 2 Example scenes.
+
+<strong>Future features:</strong>
+
+- Listen system for zombies.
+- Revive system between zombies.
+
+<a href="http://lerp2dev.com/">Team website</a>
+<a href="https://www.youtube.com/channel/UCiFVI6Ulx0OoOttUf-IffKA">Team YouTube channel</a>
+
+It doesn't have a Demo for security reasons, we apologize.
+This asset is in Alpha version and it costs $15, when Beta is reached the price will increase up to $20, official releases will be around $25-$30.
+
+We hope you enjoy it!
+Best regards.
+
+~~ Lerp2Dev Team ~~
+
+TODO:
+
+Forum link
+Support from Github Org (to open new tickets)
