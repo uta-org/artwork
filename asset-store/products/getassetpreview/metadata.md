@@ -2,7 +2,7 @@
 
 **GetAssetPreview** is optimized for most platforms. 
 
-**Clean, simple and easy to understand**, this asset contains a [README file](https://dev.z3nth10n.net/dev/assets/getassetpreview/manuals/) and a (documentation API)[https://dev.z3nth10n.net/dev/assets/getassetpreview/docs/] where you can find the most important aspects of this asset.
+**Clean, simple and easy to understand**, this asset contains a [README file](https://dev.z3nth10n.net/dev/assets/getassetpreview/manuals/) and a [documentation API](https://dev.z3nth10n.net/dev/assets/getassetpreview/docs/) where you can find the most important aspects of this asset.
 
 **Main contents:** 
 
