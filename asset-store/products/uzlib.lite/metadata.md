@@ -1,6 +1,6 @@
 **"uzLib Lite" will provide you lots of utilities to help you implementing anything on Unity3D/.NET projects.** 
 
-**uzLib Lite** is optimized for most platforms. 
+**uzLib Lite** is optimized for most platforms. (Requires .NET 4.6)
 
 **Clean, simple and easy to understand**, this asset contains a [README file](https://dev.z3nth10n.net/dev/assets/uzlib.lite/manuals/) and a [documentation API](https://dev.z3nth10n.net/dev/assets/uzlib.lite/docs/) where you can find the most important aspects of this asset.
 

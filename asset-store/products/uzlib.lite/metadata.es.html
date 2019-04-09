@@ -1,0 +1,233 @@
+<p>
+	<img alt="pKBcfJ4.png" src="https://i.imgur.com/pKBcfJ4.png"><br>
+	<img alt="259.png" src="http://k32.kn3.net/taringa/9/E/4/0/9/4/moondarkgoth/259.png"><br>
+	Esta API tiene una lista extensa de m&eacute;todos para extender la funcionalidad de las clases de .NET Framework, WinForms, System.Console y Unity3D. Adem&aacute;s, contiene implementaciones propias y de terceros.
+</p>
+
+<p>
+	<strong>Lista de contenidos interesantes por espacios de nombres</strong>
+</p>
+
+<ul>
+	<li>
+		<strong>uzLib.Lite.Core</strong>
+
+		<ul>
+			<li>
+				Contiene una implementaci&oacute;n de Singleton.
+			</li>
+			<li>
+				Contiene un wrapper de consola para leer l&iacute;neas o teclas al mismo tiempo. (clase <strong>ConsoleOutput</strong>, <em>m&eacute;todo: ReadLineOrKey</em>)
+			</li>
+			<li>
+				Dentro del namespace &quot;Input&quot; podemos encontrar alguna clase que contiene una implementaci&oacute;n (clase <strong>SmartPsswrd</strong>) para leer <em><span style="color: #808080;">contrase&ntilde;as</span></em> por pantalla sin mostrarlas (como se esperar&iacute;a de un entorno Linux).
+			</li>
+		</ul>
+	</li>
+	<li>
+		<strong>uzLib.Lite.Extensions</strong>
+		<ul>
+			<li>
+				Contiene algunas <em>extensiones para arrays y colecciones</em> (a&ntilde;adir elementos a un array, comprobar si un <em>Dictionary/List/HashSet/IEnumerable</em> es nulo o est&aacute; vac&iacute;o (<em><span style="color: #808080;">IsNullOrEmpty</span></em>), exntesiones ForEach para ejecutar <em><span style="color: #808080;">Action</span></em> callbacks (inclu&iacute;das con &iacute;ndice (&quot;int index&quot;)) (<u>m&aacute;s metodos en la API de pago</u>), borrar en el &iacute;ndice, <em><span style="color: #808080;">DisctintBy</span></em>&hellip;)
+			</li>
+			<li>
+				Contiene algunos m&eacute;todos de extensiones de &quot;Dictionary&quot;:
+				<ul>
+					<li>
+						<strong>FindIndex</strong> (busca el &iacute;ndice por predicado)
+					</li>
+					<li>
+						<strong>GetIndex</strong> (obtiene el &iacute;ndice de un item existente, si no, devuelve -1)
+					</li>
+					<li>
+						<strong>AddOrSet</strong> (a&ntilde;ade un valor si la clave no existe, si existe entonces actualiza el valor)
+						<ul>
+							<li>
+								<strong>AddOrAppend</strong> (lo mismo que antes, pero para las clases <em><span style="color: #808080;">List&lt;T&gt; y T[]</span></em> como <strong>TValue</strong>)
+							</li>
+						</ul>
+					</li>
+					<li>
+						<strong>AddAndGet</strong> (si la clave no existe a&ntilde;adela con el valor specificado, despu&eacute;s devu&eacute;lvelo)
+						<ul>
+							<li>
+								<strong>Get</strong> (lo mismo que antes, pero fuerza los tipos gen&eacute;ricos con constraints del tipo: <em><span style="color: #808080;">where TValue : class, new()</span></em>, para que siempre sean clases lo que se pase como tipo gen&eacute;rico)
+							</li>
+							<li>
+								<strong>SafeGet</strong> (intenta obtener el valor si la clave existe, si no devuelve el valor por defecto (<em><span style="color: #808080;">default(TValue)</span></em>))
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Contiene algunas <em>extensiones para la clase Bitmap</em>: obtiene un <em><span style="color: #808080;">IEnumerable</span></em> de Colores (&quot;Color&quot;) de una clase <em><span style="color: #808080;">Bitmap</span></em> o lo guarda (<em><span style="color: #808080;">Save</span></em>) en una ruta (o en un Stream (<strong>TODO</strong>)).
+			</li>
+			<li>
+				Contiene una <em>extensi&oacute;n para el tipo primitivo byte</em>: el m&eacute;todo <em><span style="color: #808080;">RoundOff</span></em> (para obtener un &quot;byte&quot; redondeado)&hellip;
+			</li>
+			<li>
+				Contiene algunas <em>extensiones para la clase Color</em>: <strong>obtener el umbral</strong> entre dos colores, comparar un <em><span style="color: #808080;">color1</span></em> para <strong>obtener un color similar</strong> a partir de un IEnumerable de colores (2), <em>convoluci&oacute;n de posterizaci&oacute;n</em>, obtener porcentaje de similaridad, redondear colores&hellip;
+			</li>
+			<li>
+				Contiene un m&eacute;todo de extensi&oacute;n para <strong>compilar archivos *.sln</strong>&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones de compresi&oacute;n</em>: <strong>zip/unzip</strong> archivos a partir de su ruta (path), Streams u objetos (sync/async)&hellip;
+			</li>
+			<li>
+				Contiene una <em>extensi&oacute;n CodeDOM</em> para a&ntilde;adir literales <em><span style="color: #808080;">&quot;static&quot;</span></em> a nuevas clases generadas a trav&eacute;s de la clase <em><span style="color: #808080;">CodeTypeDeclaration</span></em>.
+			</li>
+			<li>
+				Contiene una <em>extensi&oacute;n DateTime</em> para obtener su <em>timestamp de UNIX</em> (usa la clase <em><span style="color: #808080;">DateTime</span></em> no la clase <em><span style="color: #808080;">DateTimeOffset</span></em>).
+			</li>
+			<li>
+				Contiene una <em>extensi&oacute;n para la clase Exception</em> para comprobar si un el &iacute;ndice del objeto de tipo <em>array/List/Dictionary</em> <strong>est&aacute; fuera del l&iacute;mite</strong>.
+			</li>
+			<li>
+				Contiene <em>extensiones para Git</em> para obtener algunos datos usando la librer&iacute;a <strong>LibGit2Sharp</strong>.
+			</li>
+			<li>
+				Contiene <em>exntesiones para HTML</em> para <strong>limpiar y buscar ocurrencias</strong> en <em>c&oacute;digos fuentes HTML</em>.
+			</li>
+			<li>
+				Contiene <em>extensiones IO</em> para verificar rutas v&aacute;lidas, obtener nombres de archivos a partir de URLs, obtener y verificar patrones de rutas relativas, verificar si la ruta es un directorio, obtener directorios de nivel superior, subir el &aacute;rbol de rutas (<em>N veces</em>), obtener directorios temporales, verificar si los directorios est&aacute;n vac&iacute;os o son nulos, eliminar el contenido de una carpeta&hellip;
+			</li>
+			<li>
+				Contiene <em>exntesiones para Internet (System.Net)</em> para descargar archivos y hacer (<em><span style="color: #808080;">GET</span></em>) peticiones&hellip;
+			</li>
+			<li>
+				Contiene una <em>extensi&oacute;n para la clase Object</em> para comprobar si un objeto es convertible (cast)&hellip;
+			</li>
+			<li>
+				Contiene una <em>extensi&oacute;n para la clase Process</em> para lanzar procesos as&iacute;ncronamente&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones para el namespace Reflection</em> para invocar m&eacute;todos est&aacute;ticos/no-est&aacute;ticos, verificar si existe un m&eacute;todo en la &quot;Assembly&quot; especificada, ejecutar un m&eacute;todo comprobando las excepciones&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones de serializaci&oacute;n</em> para serializar/deserializar archivos/Streams/objetos/arrays de bytes y para comprobar cadenas de JSON/XML v&aacute;lidas, etc&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones para la clase String</em> para verificar si la cadena es nula o est&aacute; vac&iacute;a (no se necesitar&iacute;a usar m&aacute;s: <em><span style="color: #808080;">...string.IsNullOrEmpty(&quot;example&quot;)...</span></em>), formatear cadenas (la misma l&oacute;gica), para cambiar el primer car&aacute;cter de una cadena a may&uacute;scula&hellip;
+			</li>
+			<li>
+				Contiene una <em>extensi&oacute;n para URIs</em> para comprobar si la URL pasada por cadena es v&aacute;lida.
+			</li>
+			<li>
+				Contiene una <em>exntesi&oacute;n para Visual Studio</em> para obtener el proyecto de Inicio desde un archivo de soluci&oacute;n&hellip;
+			</li>
+		</ul>
+	</li>
+	<li>
+		<strong>uzLib.Lite.Plugins.SymLinker</strong>
+		<ul>
+			<li>
+				Contiene una implementaci&oacute;n para crear <strong>enlaces simb&oacute;licos</strong> en Windows/Linux/Mac OSx&hellip;
+			</li>
+		</ul>
+	</li>
+	<li>
+		<strong>uzLib.Lite.Shells</strong>
+		<ul>
+			<li>
+				Contiene una implementaci&oacute;n <strong>obsoleta</strong> llamada GitShell (una auto-implementaci&oacute;n de la funcionalidad de Git antes de que descubriera LibGit2Sharp&hellip;)
+			</li>
+		</ul>
+	</li>
+	<li>
+		<strong>uzLib.Lite.Unity.Extensions</strong>
+		<ul>
+			<li>
+				Contiene <em>extensiones para animaciones (clase &quot;Animation&quot;)</em>.
+			</li>
+			<li>
+				Contiene <em>extensiones para la clase Color</em>: color naranja (Orange) (<strong>TODO</strong>: implementar m&aacute;s colores), para comprobar si los colores son similares, la distancia entre colores, obtener colores al azar, las mismas extensiones que la clase <em><span style="color: #808080;">uzLib.Lite.Extensions.ColorHelper</span></em> (pero adaptadas a Unity3D)&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones de geometr&iacute;a</em> para obtener posiciones al azar (<em><span style="color: #808080;">Vector3</span></em>), obtener la media de <em><span style="color: #808080;">Vector3</span></em>s, obtener l&iacute;mites encapsulados (esto es un promedio de los l&iacute;mites de todos los renderizadores (Renderers) de un <em><span style="color: #808080;">GameObject</span></em>), obtener el tama&ntilde;o ortogr&aacute;fico que se establece en una c&aacute;mara para que este objeto se ajuste perfectamente a su vista, obtener la compensaci&oacute;n de un modelo (obtener el m&aacute;ximo y los centros m&iacute;nimos del <em><span style="color: #808080;">Renderer</span></em> de un <em><span style="color: #808080;">GameObject</span></em>), comparar los tipos <em>Vector3/Vector2</em> para comprobar si son mayores o iguales, menores o iguales, menores/mayores que otro <em>Vector3/Vector2</em>, obtener objetos Vector3/Vector2 invertidos, obtener el rayo desde el centro de una c&aacute;mara&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones matem&aacute;ticas</em> obtener el m&aacute;ximo absoluto de una matriz (array) de floats (<em><span style="color: #808080;">params</span></em>), obtener el m&uacute;ltiplo de un float, verificar si un float est&aacute; entre un rango (operaci&oacute;n exclusiva/inclusiva), establecer la componente &ldquo;Y&rdquo; de un vector, obtener la distancia entre dos Vector3/Vector2&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones para objetos (GameObject/Transforms)</em> para establecer capas, etiquetas de forma recursiva, eliminar componentes de forma recursiva, buscar Transforms padres por su nombre, obtener el componente (Component) m&aacute;s arriba en la jerarqu&iacute;a, obtener los componentes por nombre, obtener o agregar componentes en un GameObject (o lanzar excepciones/LogErrors), crear hijos f&aacute;cilmente, destrucci&oacute;n segura (verifique si el proyecto est&aacute; ejecutandose bajo el Editor (<em><span style="color: #808080;">Application.isEditor</span></em>) de Unity ejecutando <em><span style="color: #808080;">DesroyImmediate</span></em>), obtener la ruta de GameObject (volcado de la jerarqu&iacute;a de los hijos de este), env&iacute;ar un mensaje a los objetos (SendMessage) del tipo seleccionado&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones para la clase Rect</em> para conseguir que la implementaci&oacute;n de los <em><span style="color: #808080;">PropertyDrawer</span></em>s sea m&aacute;s sencilla, para verificar si el rect est&aacute; dentro de otro rect, agregar el relleno a un rect, hacerles &quot;Clamp&quot;&hellip;
+			</li>
+			<li>
+				Contiene <em>extensuiones para la clase Texture(2D)</em> para escribir un texto en una textura, obtener su ancho/alto como un objeto de tipo <em><span style="color: #808080;">Vector2</span></em>, crear texturas a partir de colores (UnityEngine.Color)&hellip;
+			</li>
+			<li>
+				Contiene <em>extensiones para la interfaz (UI)</em> donde est&aacute;n puestos algunos <em><span style="color: #808080;">GUIStyle</span></em>s personalizados, obtener <em><span style="color: #808080;">Rect</span></em>s centrados, dibujar <em><span style="color: #808080;">Rect</span></em>s, dibujar <em><span style="color: #808080;">ProgressBar</span></em>s, &quot;Label&quot;s centrados, dibujar Marquees&hellip;
+			</li>
+		</ul>
+	</li>
+	<li>
+		<strong>uzLib.Lite.Unity.Utils</strong>
+		<ul>
+			<li>
+				Contiene una <em>clase llamada &quot;GLDebug&quot;</em> para visualizar Gizmos dentro de la vista de juego (Game view).
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<p>
+	<strong>Screenshots</strong><br>
+	<br>
+	<a href="https://imgur.com/a/dqWBKwN" ipsnoembed="true" rel="external nofollow">https://imgur.com/a/dqWBKwN</a><br>
+	<br>
+	<strong>Instalaci&oacute;n</strong>
+</p>
+
+<p>
+	&iquest;Necesitas ayuda? Solo clona <a href="https://github.com/uta-org/uzLib.Lite/" rel="external nofollow">este repositorio</a> en tu proyecto de Unity o en tu soluci&oacute;n.
+</p>
+
+<p>
+	Para la documentaci&oacute;n, mira la <a href="http://dev.z3nth10n.net/dev/assets/uzlib.lite/docs" rel="external nofollow">Documentation API</a>.
+</p>
+
+<p>
+	<strong>Problemas</strong>
+</p>
+
+<p>
+	&iquest;Tienes problemas? Reportalos en <a href="https://github.com/uta-org/uzLib.Lite/issues" rel="external nofollow">la secci&oacute;n de problemas</a>. <strong>&iexcl;Gracias por el feedback!</strong>
+</p>
+
+<p>
+	<strong>Contribuir</strong>
+</p>
+
+<p>
+	Haz un fork de <a href="https://github.com/uta-org/uzLib.Lite" rel="external nofollow">este repositorio</a>, realiza los cambios oportunos y luego crea una pull request (PR). Si encuentra errores o tiene ideas nuevas que no desea implementar, presente un informe de error.
+</p>
+
+<p>
+	<strong>Enlaces de relevancia:</strong><br>
+	<a href="https://github.com/uta-org" rel="external nofollow">Sitio del equipo</a><br>
+	<a href="https://www.youtube.com/channel/UC1noBu4jkWFwRLwKOjUxBwA" rel="external nofollow">Canal de YouTube</a><br>
+	<a href="https://github.com/uta-org/support/issues" rel="external nofollow">Soporte (abre tus tickets aqu&iacute;)</a><br>
+	<a href="http://u3d.as/1vfn" rel="external nofollow">Enlace a la Asset Store</a> <a href="https://github.com/uta-org/uzLib.Lite" rel="external nofollow">Enlace al repositorio</a><br>
+	<a href="http://dev.z3nth10n.net/dev/assets/uzlib.lite/docs" rel="external nofollow">Documentaci&oacute;n del asset</a>
+</p>
+
+<p>
+	&iexcl;Espero que&nbsp;disfrut&eacute;is el asset!<br>
+	&iexcl;Un saludo!
+</p>
+
+<p>
+	&nbsp;
+</p>
+
+<center>
+	<span style="font-size:28px;"><strong>~~ United Teamwork Association ~~</strong></span>
+</center>
+
+<p>
+	&nbsp;
+</p>
