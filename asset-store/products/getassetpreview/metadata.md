@@ -24,7 +24,7 @@
 [Team Website](https://github.com/uta-org) 
 [Team YouTube Channel](https://www.youtube.com/channel/UC1noBu4jkWFwRLwKOjUxBwA)
 [Support (open your tickets here)](https://github.com/uta-org/support/issues)
-[Forum Topic](...)
+[Forum Topic](https://forum.unity.com/threads/release-getassetpreview-in-unityengine.656365/)
 
 It doesn't have a Demo for security reasons, we apologize.
 
